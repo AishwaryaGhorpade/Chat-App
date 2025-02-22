@@ -2,11 +2,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { UserButton } from '@clerk/nextjs'
-import { useUser } from '@clerk/nextjs'
 
 function Navbar() {
-    const user=useUser()
-    console.log(user.user?.id)
   return (
     <nav className='bg-gray-800 text-white p-4'>
         <div className='container mx-auto flex justify-between items-center'>
